@@ -1,0 +1,38 @@
+*{margin-top: 10px;}
+html, body{margin: 0; height: 100%;}
+h1{text-align: center;}
+label{display: block;}
+input[type="range"]{width: 100%;}
+.blue{color: blue;}
+.red{color: red;}
+.green{color: green;}
+body{font-size: 20px;}
+.ctr{display: flex; justify-content: center; align-items: center;}
+.container{display: inline-block;}
+.rgb-con{display: inline-block; width: 75%;}
+.rgb-value, .hex-value{border: none; background-color: transparent; display: table; text-align: center; width: 150px; outline: none;}
+.rgb-value::selection, .hex-value::selection{background-color: transparent; color: black;}
+.rgb-value, .hex-value{font-size: 16px; width: 66.67%; float: left;}
+button{width: 33.33%;}
+.rgb-value::after, button::after, .hex-value::after{clear: both; display: table; content: "";}
+.result-con{float: right; margin-left: 50px; width: 250px;}
+.result-con::after{content: ""; clear: both; display: table;}
+.result{width: 100%; height: 150px; border: 1px solid black;}
+.teks{animation: 1s fade infinite alternate;}
+@keyframes fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.copied{position: absolute; animation: move 1s ease; margin-top: -22px; margin-left: 167px; display: none; z-index: -1;}
+@keyframes move{
+    0%{margin-left: 167px;}
+    40%{margin-left: 265px;}
+    60%{margin-left: 265px;}
+    100%{margin-left: 167px;}
+}
+@media only screen and (max-width: 455px){
+    .result-con{margin: auto; float: none;}
+}
+@media only screen and (max-width: 262px){
+    .result-con{width: 90%;}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="slider-combin.css" type="text/css">
+    <link rel="icon" href="favicomatic/GDIco-32px.png" type="png">
+    <title>Color Picker</title>
+</head>
+
+<body class="ctr">
+    <div class="container">
+        <h1>RGB Color Picker</h1>
+        <div class="result-con">
+            <div class="result ctr" style="background-color: rgb(26, 210, 128);">
+                <div class="teks">Result</div>
+            </div>
+            <center>
+                <input type="text" class="rgb-value" value="rgb(26, 210, 128)">
+                <button type="button">Copy RGB</button>
+                <div class="copied">Copied!</div>
+                <input type="text" class="hex-value" value="#1AD280">
+                <button type="button">Copy Hex</button>
+                <div class="copied">Copied!</div>
+            </center>
+        </div>
+        <div class="ctr">
+            <div class="rgb-con"><label for="red" class="red">Red</label><input type="range" name="red-points" min="0" max="255" value="26"><br>
+                <label for="green" class="green">Green</label><input type="range" name="green-points" min="0" max="255" value="210"><br>
+                <label for="blue" class="blue">Blue</label><input type="range" name="blue-points" min="0" max="255" value="128">
+            </div>
+        </div>
+    </div>
+    <script src="slider-combin.js"></script>
+</body>
+
+</html>
